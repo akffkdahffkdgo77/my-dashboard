@@ -1,4 +1,3 @@
-/* eslint-disable no-plusplus */
 import { useState } from 'react';
 
 import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
@@ -6,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import useCalendar from 'hooks/calendar/useCalendar';
 
-import { calculateMonth, calculateYear, getDates } from 'utils';
+import { calculateMonth, calculateYear, createCalendar, getDates } from 'utils';
 
 export default function Calendar() {
     const [month, setMonth] = useState(new Date().getMonth());
@@ -17,71 +16,18 @@ export default function Calendar() {
     const [calendar, setCalendar] = useCalendar();
 
     const handleMonth = (type: string) => {
-        const arr = [];
-        const dateArr = [];
-
-        const today = new Date();
         const curMonth = calculateMonth({ month, type });
         const curYear = calculateYear({ curMonth, today: current, type });
-        const { curDate, firstDay, lastDay, lastDate } = getDates(curMonth);
+        const { firstDay, lastDate } = getDates(curMonth);
 
-        let day = 1;
-        const rowNum = Math.ceil((lastDate + firstDay) / 7);
-        // week
-        for (let i = 1; i <= rowNum; i++) {
-            curDate.setDate(day);
-            let firstRowDate = 1;
-            // day
-            for (let j = 0; j < 7; j++) {
-                // first week
-                if (i === 1) {
-                    if (firstDay === j) {
-                        curDate.setDate(curDate.getDate());
-                        dateArr.push({ day: j, date: curDate.getDate() });
-                    } else if (firstDay < j) {
-                        if (j >= 1) {
-                            firstRowDate += 1;
-                        }
-                        curDate.setDate(firstRowDate);
-                        dateArr.push({ day: j, date: curDate.getDate() });
-                    } else {
-                        dateArr.push({ day: null, date: null });
-                    }
-                } else if (i > 1 && i < rowNum) {
-                    if (j > 0) {
-                        curDate.setDate(curDate.getDate() + 1);
-                    } else {
-                        curDate.setDate(curDate.getDate());
-                    }
-                    dateArr.push({ day: j, date: curDate.getDate() });
-                } else if (i === rowNum) {
-                    if (j <= lastDay) {
-                        if (j > 0) {
-                            curDate.setDate(curDate.getDate() + 1);
-                        } else {
-                            curDate.setDate(curDate.getDate());
-                        }
-                        dateArr.push({ day: j, date: curDate.getDate() });
-                    } else {
-                        dateArr.push({ day: null, date: null });
-                    }
-                }
-            }
-            arr.push([...dateArr]);
-            dateArr.splice(0, dateArr.length);
-            day = curDate.getDate() + 1;
-        }
-        setCalendar(arr);
+        setCalendar(createCalendar({ length: lastDate, startOfMonth: firstDay }));
         setMonth(curMonth);
-
-        today.setMonth(curMonth);
-        today.setFullYear(curYear);
-        setCurrent(new Date(today).toLocaleDateString('en-US', { year: 'numeric', month: 'short' }));
+        setCurrent(new Date(`${curYear}-${curMonth + 1}-01`).toLocaleDateString('en-US', { year: 'numeric', month: 'short' }));
     };
 
     return (
         <div className="w-full h-full flex flex-col items-start justify-start">
-            <div className="w-full h-[48px] px-5 flex items-center justify-between">
+            <div className="w-full h-[48px] px-2.5 flex items-center justify-between">
                 <h2 className="text-lg font-bold font-mono">{current}</h2>
                 <div>
                     <button type="button" onClick={() => handleMonth('prev')}>
@@ -113,14 +59,14 @@ export default function Calendar() {
                                         <div className="w-10 h-10 flex justify-center items-center">
                                             <span
                                                 className={
-                                                    toMonth === month + 1 && (d.date === todate || [22, 23, 24].includes(d.date || 1))
+                                                    toMonth === month + 1 && (d === todate || [22, 23, 24].includes(+d || 1))
                                                         ? 'text-xs leading-6 rounded-full w-6 h-6 text-center bg-white border-black border font-bold'
-                                                        : d.date
+                                                        : d
                                                         ? 'text-xs leading-6 rounded-full w-6 h-6  text-center'
                                                         : ''
                                                 }
                                             >
-                                                {d.date}
+                                                {d}
                                             </span>
                                         </div>
                                     </td>
@@ -145,13 +91,13 @@ export default function Calendar() {
                         {calendar.map((date, idx) => (
                             <div key={idx} className="flex-1 flex items-center justify-center w-full text-base">
                                 {date.map((d, index) =>
-                                    toMonth === month + 1 && d.date === 22 ? (
+                                    toMonth === month + 1 && d === 22 ? (
                                         <div key={index} className="w-[110px] h-[52px] visible">
                                             <div className="w-full h-full flex justify-center items-center">
                                                 <div className="w-full h-[15px] bg-black text-xs" />
                                             </div>
                                         </div>
-                                    ) : toMonth === month + 1 && d.date && d.date > 22 ? null : (
+                                    ) : toMonth === month + 1 && d && d > 22 ? null : (
                                         <div key={index} className="w-[54px] h-[52px] invisible">
                                             <div className="w-10 h-10 flex justify-center items-center">
                                                 <div className="w-full h-[15px] bg-black text-xs" />

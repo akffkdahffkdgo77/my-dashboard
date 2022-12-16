@@ -35,6 +35,7 @@ type CalculateYearType = {
     today: string;
     type: string;
 };
+
 export const calculateYear = ({ curMonth, today, type }: CalculateYearType) => {
     let curYear = new Date(today).getFullYear();
     if (curMonth === 0 && type === 'next') {
@@ -44,4 +45,30 @@ export const calculateYear = ({ curMonth, today, type }: CalculateYearType) => {
     }
 
     return curYear;
+};
+
+type CalendarType = {
+    length: number;
+    startOfMonth: number;
+};
+
+export const createCalendar = ({ length, startOfMonth }: CalendarType) => {
+    const week: (number | string)[] = [];
+    const arr: (number | string)[][] = [];
+    const nullDates = Array.from({ length: startOfMonth }).map(() => '');
+
+    Array.from({ length: 42 })
+        .map((_, i) => i + 1)
+        .forEach((e, i) => {
+            const date = nullDates.length ? e - nullDates.length : e;
+            if (date > 0) {
+                week.push(date <= length ? date : '');
+                if ((i + 1) % 7 === 0 && week.filter((e) => e).length) {
+                    arr.push(i === 6 ? [...nullDates, ...week] : [...week]);
+                    week.splice(0, 7);
+                }
+            }
+        });
+
+    return arr;
 };
