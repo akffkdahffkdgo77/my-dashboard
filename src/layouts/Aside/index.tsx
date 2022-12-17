@@ -1,4 +1,4 @@
-import Calendar from 'components/Calendar';
+import Calendar from 'component/Calendar';
 
 export default function Aside() {
     return (
