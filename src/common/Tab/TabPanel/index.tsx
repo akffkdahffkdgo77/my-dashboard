@@ -4,6 +4,7 @@ interface ITabPanel {
     children: React.ReactNode;
 }
 
+// TODO: keyboard interaction
 // The element that contains the content associated with a tab.
 export default function TabPanel({ index, selected = false, children }: ITabPanel) {
     return (

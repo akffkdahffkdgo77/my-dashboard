@@ -5,6 +5,7 @@ interface ITabItem {
     onClick: (index: number) => void;
 }
 
+// TODO: keyboard interaction
 // An element in the tab list that serves as a label for one of the tab panels and can be activated to display that panel.
 export default function TabItem({ index, selected = false, children, onClick }: ITabItem) {
     return (

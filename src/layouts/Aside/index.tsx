@@ -1,5 +1,6 @@
 import Calendar from 'component/Calendar';
 
+// TODO: Menu
 export default function Aside() {
     return (
         <aside className="fixed right-0 top-0 bottom-0 p-5 w-[450px] border-l border-black">

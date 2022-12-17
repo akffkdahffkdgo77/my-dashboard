@@ -2,6 +2,7 @@ interface ITabList {
     children: React.ReactNode;
 }
 
+// TODO: keyboard interaction
 // A set of tab elements contained in a tablist element.
 export default function TabList({ children }: ITabList) {
     return (
