@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { Tab } from 'common';
-import { TabItemsList, OverviewPanel, StudyPanel } from 'components';
+import { TabItemsList, OverviewPanel, StudyPanel } from 'pages/Home/components';
 
 export default function Home() {
     const [selected, setSelected] = useState(1);
