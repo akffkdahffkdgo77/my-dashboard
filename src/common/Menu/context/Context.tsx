@@ -1,7 +1,7 @@
 import { createContext } from 'react';
 
-import { IMenuButtonContext } from 'common/Menu/types';
+import { IMenuContext } from 'common/Menu/types';
 
-const MenuButtonContext = createContext<IMenuButtonContext | undefined>(undefined);
+const MenuContext = createContext<IMenuContext | undefined>(undefined);
 
-export default MenuButtonContext;
+export default MenuContext;

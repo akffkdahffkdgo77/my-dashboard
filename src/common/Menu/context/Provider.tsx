@@ -1,7 +1,7 @@
 import React, { createRef, useCallback, useEffect, useMemo, useState } from 'react';
 
-import MenuButtonContext from 'common/Menu/context/Context';
-import { IMenuButtonContext, IMenuButtonProvider } from 'common/Menu/types';
+import MenuContext from 'common/Menu/context/Context';
+import { IMenuContext, IMenuProvider } from 'common/Menu/types';
 
 type TabIndexType = {
     linkRefs: React.RefObject<HTMLAnchorElement>[];
@@ -19,7 +19,7 @@ export const changeTabIndex = ({ linkRefs, tabIndex }: TabIndexType) => {
     }
 };
 
-export default function MenuButtonProvider({ children }: IMenuButtonProvider) {
+export default function MenuButtonProvider({ children }: IMenuProvider) {
     const [isVisible, setIsVisible] = useState(false);
     const [key, setKey] = useState('');
 
@@ -102,7 +102,7 @@ export default function MenuButtonProvider({ children }: IMenuButtonProvider) {
         }
     }, [isVisible]);
 
-    const value: IMenuButtonContext = useMemo(() => ({ isVisible, setIsVisible, linkRefs, onClick, onKeyDown, onMouseEnter, onMouseLeave }), [isVisible, linkRefs, onMouseEnter, onMouseLeave]);
+    const value: IMenuContext = useMemo(() => ({ isVisible, setIsVisible, linkRefs, onClick, onKeyDown, onMouseEnter, onMouseLeave }), [isVisible, linkRefs, onMouseEnter, onMouseLeave]);
 
-    return <MenuButtonContext.Provider value={value}>{children}</MenuButtonContext.Provider>;
+    return <MenuContext.Provider value={value}>{children}</MenuContext.Provider>;
 }

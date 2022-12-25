@@ -1,4 +1,4 @@
-export interface IMenuButtonContext {
+export interface IMenuContext {
     linkRefs: React.RefObject<HTMLAnchorElement>[];
     isVisible: boolean;
     setIsVisible: React.Dispatch<React.SetStateAction<boolean>>;
@@ -8,7 +8,7 @@ export interface IMenuButtonContext {
     onMouseLeave: (e: React.MouseEvent) => void;
 }
 
-export interface IMenuButtonProvider {
+export interface IMenuProvider {
     children: React.ReactNode;
 }
 
