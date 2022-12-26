@@ -6,7 +6,6 @@ import { ITabContext, ITabProvider } from 'common/Tab/types';
 export default function TabProvider({ children }: ITabProvider) {
     const linkRefs = Array.from({ length: 2 }).map(() => createRef<HTMLButtonElement>());
 
-    // Add Keyboard Event Listener
     useEffect(() => {
         const onKeyMove = (event: KeyboardEvent) => {
             if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {

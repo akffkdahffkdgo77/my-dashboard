@@ -25,7 +25,6 @@ export default function MenuButtonProvider({ children }: IMenuProvider) {
 
     const linkRefs = Array.from({ length: 2 }).map(() => createRef<HTMLAnchorElement>());
 
-    // Add Keyboard Event Listener
     useEffect(() => {
         const onKeyMove = (event: KeyboardEvent) => {
             if (event.key === 'Escape') {
