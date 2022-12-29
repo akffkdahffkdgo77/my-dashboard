@@ -57,60 +57,80 @@ Clone Coding Dashboard
 ├── common
 │   ├── Calendar
 │   │   ├── CalendarContainer
-│   │   │   └── index.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
 │   │   ├── CalendarNavigation
-│   │   │   └── index.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
 │   │   ├── CalendarTable
-│   │   │   └── index.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
 │   │   ├── CalendarTasks
-│   │   │   └── index.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
 │   │   └── index.ts
 │   ├── Card
 │   │   ├── CardContainer
-│   │   │   └── index.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
 │   │   ├── CardHeader
-│   │   │   └── index.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
 │   │   ├── CardHeading
-│   │   │   └── index.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
 │   │   ├── CardMedia
-│   │   │   └── index.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
 │   │   ├── CardSubtitle
-│   │   │   └── index.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
 │   │   ├── CardSupportingVisual
-│   │   │   └── index.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
 │   │   ├── CardText
-│   │   │   └── index.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
 │   │   ├── CardTitle
-│   │   │   └── index.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
 │   │   └── index.ts
 │   ├── Menu
-│   │   ├── Button
-│   │   │   └── index.tsx
-│   │   ├── MenuList
-│   │   │   └── index.tsx
-│   │   ├── MenuListItem
-│   │   │   └── index.tsx
-│   │   ├── context
+│   │   ├── MenuButton
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
+│   │   ├── MenuContext
 │   │   │   ├── Context.tsx
-│   │   │   └── Provider.tsx
-│   │   ├── index.ts
-│   │   └── types.ts
+│   │   │   ├── Provider.tsx
+│   │   │   └── types.ts
+│   │   ├── MenuList
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
+│   │   ├── MenuListItem
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
+│   │   └── index.ts
 │   ├── Tab
 │   │   ├── Tab
-│   │   │   └── index.tsx
-│   │   ├── TabIndicator
-│   │   │   └── index.tsx
-│   │   ├── TabItem
-│   │   │   └── index.tsx
-│   │   ├── TabList
-│   │   │   └── index.tsx
-│   │   ├── TabPanel
-│   │   │   └── index.tsx
-│   │   ├── context
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
+│   │   ├── TabContext
 │   │   │   ├── Context.tsx
-│   │   │   └── Provider.tsx
-│   │   ├── index.ts
-│   │   └── types.ts
+│   │   │   ├── Provider.tsx
+│   │   │   └── types.ts
+│   │   ├── TabIndicator
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
+│   │   ├── TabItem
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
+│   │   ├── TabList
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
+│   │   ├── TabPanel
+│   │   │   ├── index.tsx
+│   │   │   └── types.ts
+│   │   └── index.ts
 │   └── index.ts
 ├── component
 │   ├── Calendar
@@ -150,11 +170,14 @@ Clone Coding Dashboard
 │   └── Home
 │       ├── components
 │       │   ├── OverviewPanel
-│       │   │   └── index.tsx
+│       │   │   ├── index.tsx
+│       │   │   └── types.ts
 │       │   ├── StudyPanel
-│       │   │   └── index.tsx
+│       │   │   ├── index.tsx
+│       │   │   └── types.ts
 │       │   ├── TabItemsList
-│       │   │   └── index.tsx
+│       │   │   ├── index.tsx
+│       │   │   └── types.ts
 │       │   └── index.ts
 │       └── index.tsx
 ├── react-app-env.d.ts
@@ -169,8 +192,7 @@ Clone Coding Dashboard
 ## NPM Packages
 
 -   React v18 + TypeScript
--   react-router-dom
--   tailwindcss
+-   react-router-dom v6
 
 -   Icon
 
@@ -179,7 +201,11 @@ Clone Coding Dashboard
     -   @fortawesome/free-solid-svg-icons
     -   @fortawesome/react-fontawesome
 
--   d3
+-   Graph
+
+    -   d3
+
+-   tailwindcss
 
 ## Code Convention
 
