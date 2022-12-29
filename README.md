@@ -165,10 +165,32 @@ Clone Coding Dashboard
     └── index.ts
 ```
 
-## Web Accessibility
+## NPM Packages
+
+-   React v18
+-   TypeScript
+-   react-router-dom
+-   tailwindcss
+
+-   Icon
+    -   @fortawesome/fontawesome-svg-core
+    -   @fortawesome/free-regular-svg-icons
+    -   @fortawesome/free-solid-svg-icons
+    -   @fortawesome/react-fontawesome
+
+-   d3
+
+## Code Convention
+
+-   ESLint - AirBnB
+-   Prettier
+
+## References
+
+### Web Accessibility
 - https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/
 - https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/
 
-## Resources
+### Resources
 
 -   Photo by <a href="https://unsplash.com/@andriyko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andriyko Podilnyk</a> on <a href="https://unsplash.com/s/photos/rabbit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
