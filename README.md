@@ -27,27 +27,25 @@
 <img width="367" alt="스크린샷 2022-12-26 오후 9 16 04" src="https://user-images.githubusercontent.com/52883505/209548266-62cc9b3d-af7f-4a01-8276-8d7f59088bba.png">
 </p>
 
+## Weekly Clone Coding
+
+Part 8 of [Weekly Clone Coding Challenge](https://github.com/namiein/weekly-clone-coding)
+
 ## Project Description
 
 Clone Coding Dashboard
 
-## v1.0.0
+## v1.0.0 (2022.12.05 ~ 2022.12.31)
 
 -   Features
     -   D3.js Graphs
     -   Calendar
--   Studying Components (w. Web Accessibility)
-    -   Tab
+-   Components 
     -   Card
-    -   Menu
-
-## v1.0.1
-
--   Atomic Design
-
-## Web Accessibility
-- https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/
-- https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/
+    -   Menu (w. Web Accessibility)
+    -   Tab (w. Web Accessibility)
+    
+## v1.0.1 (TO-BE)
 
 ## Folder Structure
 
@@ -169,6 +167,10 @@ Clone Coding Dashboard
 └── utils
     └── index.ts
 ```
+
+## Web Accessibility
+- https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/
+- https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/
 
 ## Resources
 
