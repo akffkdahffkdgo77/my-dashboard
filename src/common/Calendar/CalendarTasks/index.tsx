@@ -1,8 +1,4 @@
-interface ICalendarTasks {
-    calendar: (number | string)[][];
-    currentMonth: number;
-    calendarMonth: number;
-}
+import { ICalendarTasks } from 'common/Calendar/CalendarTasks/types';
 
 export default function CalendarTasks({ calendar, currentMonth, calendarMonth }: ICalendarTasks) {
     return (

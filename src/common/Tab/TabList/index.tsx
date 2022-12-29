@@ -1,6 +1,4 @@
-interface ITabList {
-    children: React.ReactNode;
-}
+import { ITabList } from 'common/Tab/TabList/types';
 
 // A set of tab elements contained in a tablist element.
 export default function TabList({ children }: ITabList) {

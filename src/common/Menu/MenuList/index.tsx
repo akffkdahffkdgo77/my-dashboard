@@ -1,12 +1,13 @@
 import { useContext, useEffect, useRef } from 'react';
 
-import MenuButtonContext from 'common/Menu/context/Context';
-import { IMenuList } from 'common/Menu/types';
+import MenuContext from 'common/Menu/MenuContext/Context';
+import { IMenuList } from 'common/Menu/MenuList/types';
 
 export default function MenuList({ children }: IMenuList) {
-    const context = useContext(MenuButtonContext);
+    const context = useContext(MenuContext);
+
     if (!context) {
-        throw new Error('Not inside MenuButtonContext!');
+        throw new Error('Should be used within a `Menu Provider`');
     }
 
     const { isVisible, setIsVisible, onMouseLeave } = context;

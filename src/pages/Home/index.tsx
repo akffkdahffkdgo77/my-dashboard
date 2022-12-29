@@ -9,12 +9,10 @@ export default function Home() {
     const onClick = (index: number) => setSelected(index);
 
     return (
-        <>
-            <Tab>
-                <TabItemsList selected={selected} onClick={onClick} />
-                <OverviewPanel selected={selected === 1} />
-                <StudyPanel selected={selected === 2} />
-            </Tab>
-        </>
+        <Tab>
+            <TabItemsList selected={selected} onClick={onClick} />
+            <OverviewPanel selected={selected === 1} />
+            <StudyPanel selected={selected === 2} />
+        </Tab>
     );
 }

@@ -1,8 +1,4 @@
-interface ITabPanel {
-    index: number;
-    selected?: boolean;
-    children: React.ReactNode;
-}
+import { ITabPanel } from 'common/Tab/TabPanel/types';
 
 // The element that contains the content associated with a tab.
 export default function TabPanel({ index, selected = false, children }: ITabPanel) {

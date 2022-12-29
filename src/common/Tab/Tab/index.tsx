@@ -1,8 +1,5 @@
-import TabProvider from 'common/Tab/context/Provider';
-
-interface ITab {
-    children: React.ReactNode[];
-}
+import { ITab } from 'common/Tab/Tab/types';
+import TabProvider from 'common/Tab/TabContext/Provider';
 
 // A set of tab elements and their associated tab panels.
 export default function Tab({ children }: ITab) {

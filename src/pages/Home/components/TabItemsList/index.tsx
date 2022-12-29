@@ -1,9 +1,5 @@
 import { TabIndicator, TabItem, TabList } from 'common';
-
-interface ITabItemsList {
-    selected: number;
-    onClick: (index: number) => void;
-}
+import { ITabItemsList } from 'pages/Home/components/TabItemsList/types';
 
 export default function TabItemsList({ selected, onClick }: ITabItemsList) {
     return (

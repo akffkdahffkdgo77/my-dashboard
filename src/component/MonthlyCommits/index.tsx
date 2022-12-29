@@ -14,7 +14,7 @@ const data = Array.from({ length: 10 }).map((_d, index) => ({
 
 const dates = ['2022-12-01', '2022-12-05', '2022-12-08', '2022-12-12', '2022-12-15', '2022-12-17', '2022-12-22', '2022-12-24', '2022-12-29'];
 
-type Data = { label: number; value: number };
+type DataType = { label: number; value: number };
 
 export default function MonthlyCommits() {
     const areaChart = useRef<HTMLDivElement>(null);
@@ -107,7 +107,7 @@ export default function MonthlyCommits() {
             .call((g) => g.selectAll('.tick').selectChild('line').remove());
 
         const area = d3
-            .area<Data>()
+            .area<DataType>()
             .curve(d3.curveCardinal)
             .x((_d, i) => xScale(data[i].label))
             .y0(graphHeight)
@@ -116,7 +116,7 @@ export default function MonthlyCommits() {
         graph.append('path').datum(data).attr('fill', '#ffffff').attr('fill-opacity', 0.2).attr('stroke', 'none').attr('d', area);
 
         const line = d3
-            .line<Data>()
+            .line<DataType>()
             .curve(d3.curveCardinal)
             .x((_d, i) => xScale(data[i].label))
             .y((_d, i) => yScale(data[i].value));

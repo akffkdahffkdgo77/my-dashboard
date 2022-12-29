@@ -14,7 +14,7 @@ const data = Array.from({ length: 31 }).map((_, i) => ({
 
 const dates = Array.from({ length: 31 }).map((_d, index) => (index + 1 > 9 ? `2022-12-${index + 1}` : `2022-12-0${index + 1}`));
 
-type Data = { label: number; value: number };
+type DataType = { label: number; value: number };
 
 export default function DailyCommits() {
     const lineChart = useRef<HTMLDivElement>(null);
@@ -107,7 +107,7 @@ export default function DailyCommits() {
             .call((g) => g.selectAll('.tick').remove());
 
         const line = d3
-            .line<Data>()
+            .line<DataType>()
             .curve(d3.curveCardinal)
             .x((d) => xScale(d.label))
             .y((d) => yScale(d.value));

@@ -16,15 +16,3 @@ export type TabIndexType = {
     linkRefs: React.RefObject<HTMLAnchorElement>[];
     tabIndex: number;
 };
-
-export interface IButton {
-    children: React.ReactNode;
-}
-
-export interface IMenuList {
-    children: React.ReactNode | React.ReactNode[];
-}
-
-export interface IMenuListItem {
-    children: React.ReactNode | React.ReactNode[];
-}

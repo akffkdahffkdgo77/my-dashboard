@@ -1,9 +1,6 @@
 import { TabPanel } from 'common';
 import { DailyCommits, MonthlyCommits, WeeklyCommits, Skills, Projects, WeeklyCloneCoding } from 'component';
-
-interface IOverviewPanel {
-    selected: boolean;
-}
+import { IOverviewPanel } from 'pages/Home/components/OverviewPanel/types';
 
 export default function OverviewPanel({ selected }: IOverviewPanel) {
     return (

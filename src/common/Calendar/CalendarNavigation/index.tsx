@@ -1,10 +1,7 @@
 import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-interface ICalendarNavigation {
-    current: string;
-    handleMonth: (type: string) => void;
-}
+import { ICalendarNavigation } from 'common/Calendar/CalendarNavigation/types';
 
 export default function CalendarNavigation({ current, handleMonth }: ICalendarNavigation) {
     return (

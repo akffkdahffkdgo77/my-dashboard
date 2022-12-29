@@ -1,7 +1,7 @@
-import Button from 'common/Menu/Button';
-import MenuButtonContext from 'common/Menu/context/Context';
-import MenuButtonProvider from 'common/Menu/context/Provider';
+import MenuButton from 'common/Menu/MenuButton';
+import MenuContext from 'common/Menu/MenuContext/Context';
+import MenuProvider from 'common/Menu/MenuContext/Provider';
 import MenuList from 'common/Menu/MenuList';
 import MenuListItem from 'common/Menu/MenuListItem';
 
-export { MenuButtonContext, MenuButtonProvider, Button, MenuList, MenuListItem };
+export { MenuContext, MenuProvider, MenuButton, MenuList, MenuListItem };

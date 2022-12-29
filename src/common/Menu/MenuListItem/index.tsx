@@ -1,12 +1,13 @@
 import { useContext } from 'react';
 
-import MenuButtonContext from 'common/Menu/context/Context';
-import { IMenuListItem } from 'common/Menu/types';
+import MenuContext from 'common/Menu/MenuContext/Context';
+import { IMenuListItem } from 'common/Menu/MenuListItem/types';
 
 export default function MenuListItem({ children }: IMenuListItem) {
-    const context = useContext(MenuButtonContext);
+    const context = useContext(MenuContext);
+
     if (!context) {
-        throw new Error('Not inside MenuButtonContext!');
+        throw new Error('Should be used within a `Menu Provider`');
     }
 
     const { onMouseEnter } = context;

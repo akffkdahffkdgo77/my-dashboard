@@ -1,9 +1,6 @@
 import { TabPanel } from 'common';
-import CardList from 'component/CardList';
-
-interface IStudyPanel {
-    selected: boolean;
-}
+import { CardList } from 'component';
+import { IStudyPanel } from 'pages/Home/components/StudyPanel/types';
 
 export default function StudyPanel({ selected }: IStudyPanel) {
     return (

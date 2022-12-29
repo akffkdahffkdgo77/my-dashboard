@@ -19,10 +19,7 @@ const data = [
 
 const colors = ['#000000', '#ffffff', '#000000', '#ffffff', '#000000'];
 
-type Data = {
-    name: string;
-    value: number;
-};
+type DataType = { name: string; value: number };
 
 export default function Skills() {
     const donutChart = useRef<HTMLDivElement>(null);
@@ -62,7 +59,7 @@ export default function Skills() {
 
         const colorScale = d3.scaleOrdinal().range(colors);
 
-        function onMouseOver(event: MouseEvent, d: PieArcDatum<Data>) {
+        function onMouseOver(event: MouseEvent, d: PieArcDatum<DataType>) {
             const currentTarget = event.target as HTMLElement;
             tooltip
                 .html(
@@ -94,11 +91,11 @@ export default function Skills() {
             d3.select(currentTarget).transition().attr('opacity', 0.9).attr('transform', 'scale(1)');
         }
 
-        const pie = d3.pie<Data>().value((d) => d.value);
+        const pie = d3.pie<DataType>().value((d) => d.value);
         const computedData = pie(data);
 
         const arc = d3
-            .arc<PieArcDatum<Data>>()
+            .arc<PieArcDatum<DataType>>()
             .innerRadius(radius / 2)
             .outerRadius(radius);
 

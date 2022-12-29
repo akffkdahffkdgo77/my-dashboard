@@ -1,7 +1,7 @@
 import { createRef, useEffect, useMemo } from 'react';
 
-import TabContext from 'common/Tab/context/Context';
-import { ITabContext, ITabProvider } from 'common/Tab/types';
+import TabContext from 'common/Tab/TabContext/Context';
+import { ITabContext, ITabProvider } from 'common/Tab/TabContext/types';
 
 export default function TabProvider({ children }: ITabProvider) {
     const linkRefs = Array.from({ length: 2 }).map(() => createRef<HTMLButtonElement>());

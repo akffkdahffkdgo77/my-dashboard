@@ -1,12 +1,7 @@
 import React, { createRef, useCallback, useEffect, useMemo, useState } from 'react';
 
-import MenuContext from 'common/Menu/context/Context';
-import { IMenuContext, IMenuProvider } from 'common/Menu/types';
-
-type TabIndexType = {
-    linkRefs: React.RefObject<HTMLAnchorElement>[];
-    tabIndex: number;
-};
+import MenuContext from 'common/Menu/MenuContext/Context';
+import { IMenuContext, IMenuProvider, TabIndexType } from 'common/Menu/MenuContext/types';
 
 export const changeTabIndex = ({ linkRefs, tabIndex }: TabIndexType) => {
     if (tabIndex) {
@@ -19,7 +14,7 @@ export const changeTabIndex = ({ linkRefs, tabIndex }: TabIndexType) => {
     }
 };
 
-export default function MenuButtonProvider({ children }: IMenuProvider) {
+export default function MenuProvider({ children }: IMenuProvider) {
     const [isVisible, setIsVisible] = useState(false);
     const [key, setKey] = useState('');
 

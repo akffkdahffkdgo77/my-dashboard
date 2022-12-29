@@ -1,9 +1,4 @@
-interface ICalendarTable {
-    calendar: (number | string)[][];
-    currentDate: number;
-    currentMonth: number;
-    calendarMonth: number;
-}
+import { ICalendarTable } from 'common/Calendar/CalendarTable/types';
 
 export default function CalendarTable({ calendar, currentDate, currentMonth, calendarMonth }: ICalendarTable) {
     return (

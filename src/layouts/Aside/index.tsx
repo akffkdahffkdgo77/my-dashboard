@@ -1,5 +1,5 @@
-import Calendar from 'component/Calendar';
-import Menu from 'component/Menu';
+import { MenuProvider } from 'common/Menu';
+import { Calendar, Menu } from 'component';
 
 export default function Aside() {
     return (
@@ -10,7 +10,9 @@ export default function Aside() {
                         Hello, <strong>namiein</strong>
                         <div className="mt-[2px] text-xs">Super Admin</div>
                     </div>
-                    <Menu />
+                    <MenuProvider>
+                        <Menu />
+                    </MenuProvider>
                 </div>
                 <small className="mt-[5px] italic w-full block text-right text-[8px]">Recently Logged In : 2022-12-11 15:00 (+KST)</small>
                 <section className="my-5 mx-[5px] shadow-lg rounded-lg p-2.5">

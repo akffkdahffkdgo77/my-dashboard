@@ -2,20 +2,20 @@ import { useContext } from 'react';
 
 import { Link } from 'react-router-dom';
 
-import { Button, MenuButtonContext, MenuList, MenuListItem } from 'common/Menu';
+import { MenuButton, MenuContext, MenuList, MenuListItem } from 'common/Menu';
 
 export default function Menu() {
-    const context = useContext(MenuButtonContext);
+    const context = useContext(MenuContext);
 
     if (!context) {
-        throw new Error('Should be used within a `MenuButton Provider`');
+        throw new Error('Should be used within a `Menu Provider`');
     }
 
     const { linkRefs } = context;
 
     return (
         <>
-            <Button>N</Button>
+            <MenuButton>N</MenuButton>
             <MenuList>
                 <MenuListItem>
                     <Link

@@ -1,6 +1,4 @@
-interface ICardMedia {
-    image: string;
-}
+import { ICardMedia } from 'common/Card/CardMedia/types';
 
 export default function CardMedia({ image }: ICardMedia) {
     return (

@@ -1,6 +1,6 @@
 import { createContext } from 'react';
 
-import { ITabContext } from 'common/Tab/types';
+import { ITabContext } from 'common/Tab/TabContext/types';
 
 const TabContext = createContext<ITabContext | undefined>(undefined);
 
