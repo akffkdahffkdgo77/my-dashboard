@@ -21,9 +21,6 @@
 <img width="422" alt="스크린샷 2022-12-26 오후 9 15 42" src="https://user-images.githubusercontent.com/52883505/209548204-6d7f0094-4ad5-42d6-ad5b-4048bf4148fa.png">
 </p>
 <p align="center">
-<img width="2541" alt="스크린샷 2022-12-26 오후 9 11 21" src="https://user-images.githubusercontent.com/52883505/209547679-86aa83ce-dded-4966-82e7-e736422e8a91.png">
-</p>
-<p align="center">
 <img width="367" alt="스크린샷 2022-12-26 오후 9 16 04" src="https://user-images.githubusercontent.com/52883505/209548266-62cc9b3d-af7f-4a01-8276-8d7f59088bba.png">
 </p>
 
