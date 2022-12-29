@@ -1,4 +1,5 @@
 # My Dashboard
+
 <p align="center">
 <img width="2541" alt="스크린샷 2022-12-26 오후 9 11 21" src="https://user-images.githubusercontent.com/52883505/209548326-b91bfe89-8079-4634-bdc7-cff98a6a3fbd.png">
 </p>
@@ -37,11 +38,11 @@ Clone Coding Dashboard
 -   Features
     -   D3.js Graphs
     -   Calendar
--   Components 
+-   Components
     -   Card
     -   Menu (w. Web Accessibility)
     -   Tab (w. Web Accessibility)
-    
+
 ## v1.0.1 (TO-BE)
 
 ## Folder Structure
@@ -167,12 +168,12 @@ Clone Coding Dashboard
 
 ## NPM Packages
 
--   React v18
--   TypeScript
+-   React v18 + TypeScript
 -   react-router-dom
 -   tailwindcss
 
 -   Icon
+
     -   @fortawesome/fontawesome-svg-core
     -   @fortawesome/free-regular-svg-icons
     -   @fortawesome/free-solid-svg-icons
@@ -188,8 +189,9 @@ Clone Coding Dashboard
 ## References
 
 ### Web Accessibility
-- https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/
-- https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/
+
+-   https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/
+-   https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/
 
 ### Resources
 
