@@ -214,6 +214,12 @@ Clone Coding Dashboard
 
 ## References
 
+## D3.JS
+
+-   https://d3-graph-gallery.com/graph/area_lineDot.html
+-   https://d3-graph-gallery.com/graph/donut_basic.html
+-   https://d3-graph-gallery.com/graph/connectedscatter_tooltip.html
+
 ### Web Accessibility
 
 -   https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/
