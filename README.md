@@ -1,220 +1,64 @@
-# My Dashboard
+<div align="center">
+  <h1>My Dashboard</h1>
+  <a href="https://github.com/namiein/weekly-clone-coding">
+    <img src="https://img.shields.io/badge/Part%208-Weekly%20Clone%20Coding-blue?style=flat" alt="Part 8" />
+  </a>
+  <img src="https://img.shields.io/badge/Duration-2022--12--05%20~%202022--12--31-ff69b4?style=flat" alt="Duration" />
+  <br/>
+  <br/>
+  <img width="900" alt="스크린샷 2022-12-26 오후 9 11 21" src="https://user-images.githubusercontent.com/52883505/209548326-b91bfe89-8079-4634-bdc7-cff98a6a3fbd.png">
+  <img width="900" alt="스크린샷 2022-12-26 오후 9 11 42" src="https://user-images.githubusercontent.com/52883505/209547827-e6e5da42-a8ea-465a-aa73-59f434ecbeaf.png">
+  <img width="900" alt="스크린샷 2022-12-26 오후 9 15 10" src="https://user-images.githubusercontent.com/52883505/209548105-758b8e55-e22b-4792-bbed-019c7b5c4378.png">
+  <img width="900" alt="스크린샷 2022-12-26 오후 9 15 20" src="https://user-images.githubusercontent.com/52883505/209548174-9361d8c1-3b0b-4342-ba7f-19b9fbe02efa.png">
+  <img width="900" alt="스크린샷 2022-12-26 오후 9 15 28" src="https://user-images.githubusercontent.com/52883505/209548194-77556f99-2c0e-4e11-b55d-cd6afba56701.png">
+  <img width="422" alt="스크린샷 2022-12-26 오후 9 15 42" src="https://user-images.githubusercontent.com/52883505/209548204-6d7f0094-4ad5-42d6-ad5b-4048bf4148fa.png">
+  <br/>
+  <img width="436" alt="스크린샷 2022-12-26 오후 9 14 22" src="https://user-images.githubusercontent.com/52883505/209547891-a7770739-bff8-48bd-903d-0177bac356ba.png">
+  <img width="367" alt="스크린샷 2022-12-26 오후 9 16 04" src="https://user-images.githubusercontent.com/52883505/209548266-62cc9b3d-af7f-4a01-8276-8d7f59088bba.png">
+ 
+  <h3>🗒️ Project Description</h3>
 
-<p align="center">
-<img width="2541" alt="스크린샷 2022-12-26 오후 9 11 21" src="https://user-images.githubusercontent.com/52883505/209548326-b91bfe89-8079-4634-bdc7-cff98a6a3fbd.png">
-</p>
-<p align="center">
-<img width="2547" alt="스크린샷 2022-12-26 오후 9 11 42" src="https://user-images.githubusercontent.com/52883505/209547827-e6e5da42-a8ea-465a-aa73-59f434ecbeaf.png">
-</p>
-<p align="center">
-<img width="436" alt="스크린샷 2022-12-26 오후 9 14 22" src="https://user-images.githubusercontent.com/52883505/209547891-a7770739-bff8-48bd-903d-0177bac356ba.png">
-</p>
-<p align="center">
-<img width="1030" alt="스크린샷 2022-12-26 오후 9 15 10" src="https://user-images.githubusercontent.com/52883505/209548105-758b8e55-e22b-4792-bbed-019c7b5c4378.png">
-</p>
-<p align="center">
-<img width="1029" alt="스크린샷 2022-12-26 오후 9 15 20" src="https://user-images.githubusercontent.com/52883505/209548174-9361d8c1-3b0b-4342-ba7f-19b9fbe02efa.png">
-</p>
-<p align="center">
-<img width="1027" alt="스크린샷 2022-12-26 오후 9 15 28" src="https://user-images.githubusercontent.com/52883505/209548194-77556f99-2c0e-4e11-b55d-cd6afba56701.png">
-</p>
-<p align="center">
-<img width="422" alt="스크린샷 2022-12-26 오후 9 15 42" src="https://user-images.githubusercontent.com/52883505/209548204-6d7f0094-4ad5-42d6-ad5b-4048bf4148fa.png">
-</p>
-<p align="center">
-<img width="367" alt="스크린샷 2022-12-26 오후 9 16 04" src="https://user-images.githubusercontent.com/52883505/209548266-62cc9b3d-af7f-4a01-8276-8d7f59088bba.png">
-</p>
+  __*Clone Coding Dashboard*__
 
-## Weekly Clone Coding
+  <h3>😎 Project Features</h3>
 
-Part 8 of [Weekly Clone Coding Challenge](https://github.com/namiein/weekly-clone-coding)
+  ✨ Features   
+      ✨ D3.js Graphs   
+      ✨ Calendar   
+  ✨ Components   
+      ✨ Card   
+      ✨ Menu (w. Web Accessibility)   
+      ✨ Tab (w. Web Accessibility)   
 
-## Project Description
+  <h3>📁 Folder Structure</h3>
 
-Clone Coding Dashboard
+  <img width="300" alt="스크린샷 2023-01-01 오후 8 07 24" src="https://user-images.githubusercontent.com/52883505/210168524-5bf3eca0-fc29-4ab1-8a0c-7d09a92c3af9.png">
+  <br/>
+  <img width="300" alt="스크린샷 2023-01-01 오후 8 07 44" src="https://user-images.githubusercontent.com/52883505/210168514-50411e36-580d-495f-a71a-3c0dee78775f.png">
+  <br/>
+  <img width="300" alt="스크린샷 2023-01-01 오후 8 08 17" src="https://user-images.githubusercontent.com/52883505/210168519-45b0298b-50c7-4733-ab89-a589a3374492.png">
 
-## v1.0.0 (2022.12.05 ~ 2022.12.31)
+  <h3>💻 Tech Stacks</h3>
+  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" alt="React Router" />
+  <br/>
+  <img src="https://img.shields.io/badge/-Font Awesome-black?style=for-the-badge" alt="Font Awesome" />
+  <img src="https://img.shields.io/badge/-D3-black?style=for-the-badge" alt="D3.JS" />
+  <br/>
+  <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS" />
 
--   Features
-    -   D3.js Graphs
-    -   Calendar
--   Components
-    -   Card
-    -   Menu (w. Web Accessibility)
-    -   Tab (w. Web Accessibility)
+  <h3>🪄 Code Conventions</h3>
 
-## v1.0.1 (TO-BE)
-
-## Folder Structure
-
-```
-.
-├── app
-│   └── App.tsx
-├── assets
-│   └── images
-│       └── andriyko-podilnyk-3a1NOxCBY10-unsplash.jpg
-├── common
-│   ├── Calendar
-│   │   ├── CalendarContainer
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   ├── CalendarNavigation
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   ├── CalendarTable
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   ├── CalendarTasks
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   └── index.ts
-│   ├── Card
-│   │   ├── CardContainer
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   ├── CardHeader
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   ├── CardHeading
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   ├── CardMedia
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   ├── CardSubtitle
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   ├── CardSupportingVisual
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   ├── CardText
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   ├── CardTitle
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   └── index.ts
-│   ├── Menu
-│   │   ├── MenuButton
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   ├── MenuContext
-│   │   │   ├── Context.tsx
-│   │   │   ├── Provider.tsx
-│   │   │   └── types.ts
-│   │   ├── MenuList
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   ├── MenuListItem
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   └── index.ts
-│   ├── Tab
-│   │   ├── Tab
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   ├── TabContext
-│   │   │   ├── Context.tsx
-│   │   │   ├── Provider.tsx
-│   │   │   └── types.ts
-│   │   ├── TabIndicator
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   ├── TabItem
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   ├── TabList
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   ├── TabPanel
-│   │   │   ├── index.tsx
-│   │   │   └── types.ts
-│   │   └── index.ts
-│   └── index.ts
-├── component
-│   ├── Calendar
-│   │   └── index.tsx
-│   ├── CardList
-│   │   └── index.tsx
-│   ├── DailyCommits
-│   │   └── index.tsx
-│   ├── Menu
-│   │   └── index.tsx
-│   ├── MonthlyCommits
-│   │   └── index.tsx
-│   ├── Projects
-│   │   └── index.tsx
-│   ├── Skills
-│   │   └── index.tsx
-│   ├── WeeklyCloneCoding
-│   │   └── index.tsx
-│   ├── WeeklyCommits
-│   │   └── index.tsx
-│   └── index.ts
-├── hooks
-│   └── calendar
-│       └── useCalendar.ts
-├── index.tsx
-├── layouts
-│   ├── Aside
-│   │   └── index.tsx
-│   ├── BaseLayout
-│   │   └── index.tsx
-│   ├── Footer
-│   │   └── index.tsx
-│   ├── Header
-│   │   └── index.tsx
-│   └── index.ts
-├── pages
-│   └── Home
-│       ├── components
-│       │   ├── OverviewPanel
-│       │   │   ├── index.tsx
-│       │   │   └── types.ts
-│       │   ├── StudyPanel
-│       │   │   ├── index.tsx
-│       │   │   └── types.ts
-│       │   ├── TabItemsList
-│       │   │   ├── index.tsx
-│       │   │   └── types.ts
-│       │   └── index.ts
-│       └── index.tsx
-├── react-app-env.d.ts
-├── routes
-│   └── index.tsx
-├── styles
-│   └── index.css
-└── utils
-    └── index.ts
-```
-
-## NPM Packages
-
--   React v18 + TypeScript
--   react-router-dom v6
-
--   Icon
-
-    -   @fortawesome/fontawesome-svg-core
-    -   @fortawesome/free-regular-svg-icons
-    -   @fortawesome/free-solid-svg-icons
-    -   @fortawesome/react-fontawesome
-
--   Graph
-
-    -   d3
-
--   tailwindcss
-
-## Code Convention
-
--   ESLint - AirBnB
--   Prettier
+  <img src="https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint" />
+  <img src="https://img.shields.io/badge/Airbnb-%23ff5a5f.svg?style=for-the-badge&logo=Airbnb&logoColor=white" alt="Airbnb" />
+  <img src="https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E" alt="Prettier" />
+  
+</div>
 
 ## References
 
-## D3.JS
+### D3.JS
 
 -   https://d3-graph-gallery.com/graph/area_lineDot.html
 -   https://d3-graph-gallery.com/graph/donut_basic.html
