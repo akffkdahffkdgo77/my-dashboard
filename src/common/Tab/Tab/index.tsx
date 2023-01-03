@@ -1,5 +1,5 @@
 import { ITab } from 'common/Tab/Tab/types';
-import TabProvider from 'common/Tab/TabContext/Provider';
+import TabProvider from 'common/Tab/TabContext/provider';
 
 // A set of tab elements and their associated tab panels.
 export default function Tab({ children }: ITab) {
