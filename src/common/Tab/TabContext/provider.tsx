@@ -1,6 +1,6 @@
 import { createRef, useEffect, useMemo } from 'react';
 
-import TabContext from 'common/Tab/TabContext/Context';
+import TabContext from 'common/Tab/TabContext/context';
 import { ITabContext, ITabProvider } from 'common/Tab/TabContext/types';
 
 export default function TabProvider({ children }: ITabProvider) {
