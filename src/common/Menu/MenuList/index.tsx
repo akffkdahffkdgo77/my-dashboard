@@ -17,14 +17,14 @@ export default function MenuList({ children }: IMenuList) {
     // When click outside of Menu List, remove the list
     useEffect(() => {
         const handleClickOutsideSelect = (event: MouseEvent) => {
-            if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+            if (isVisible && menuRef.current && !menuRef.current.contains(event.target as Node)) {
                 setIsVisible(false);
             }
         };
 
         window.addEventListener('click', handleClickOutsideSelect, true);
         return () => window.removeEventListener('click', handleClickOutsideSelect, true);
-    }, [setIsVisible]);
+    }, [isVisible, setIsVisible]);
 
     return (
         <>
