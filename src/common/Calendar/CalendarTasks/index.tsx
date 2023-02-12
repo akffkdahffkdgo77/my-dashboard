@@ -18,13 +18,14 @@ export default function CalendarTasks({ calendar, currentMonth, calendarMonth }:
                 {calendar.map((date, idx) => (
                     <div key={idx} className="flex-1 flex items-center justify-center w-full text-base">
                         {date.map((d, index) =>
-                            currentMonth === calendarMonth + 1 && d === 22 ? (
-                                <div key={index} className="w-[110px] h-[52px] visible">
+                            // TODO: 시작일, 종료일로 구분해서 style 설정하기
+                            currentMonth === calendarMonth + 1 && [22, 23, 24].includes(Number(d)) ? (
+                                <div key={index} className="w-[54px] h-[52px] visible">
                                     <div className="w-full h-full flex justify-center items-center">
-                                        <div className="w-full h-[15px] bg-black text-xs" />
+                                        <div className={`${d === 22 ? 'w-1/2 ml-[50%]' : d === 24 ? 'w-1/2 mr-[50%]' : 'w-full'}  h-[15px] bg-black text-xs`} />
                                     </div>
                                 </div>
-                            ) : currentMonth === calendarMonth + 1 && d && d > 22 ? null : (
+                            ) : (
                                 <div key={index} className="w-[54px] h-[52px] invisible">
                                     <div className="w-10 h-10 flex justify-center items-center">
                                         <div className="w-full h-[15px] bg-black text-xs" />

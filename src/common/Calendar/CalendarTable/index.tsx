@@ -19,7 +19,7 @@ export default function CalendarTable({ calendar, currentDate, currentMonth, cal
                     <tr key={idx} className="text-base">
                         {date.map((d, index) => (
                             <td key={index} className="">
-                                <div className="w-10 h-10 flex justify-center items-center">
+                                <div className="w-10 h-10 flex justify-center items-center mx-auto">
                                     <span
                                         className={
                                             currentMonth === calendarMonth + 1 && (d === currentDate || [22, 23, 24].includes(+d || 1))
