@@ -1,7 +1,7 @@
-export interface ITabContext {
+export type TabContextType = {
     linkRefs: React.RefObject<HTMLButtonElement>[];
-}
+};
 
-export interface ITabProvider {
+export type TabProviderPropsType = {
     children: React.ReactNode;
-}
+};

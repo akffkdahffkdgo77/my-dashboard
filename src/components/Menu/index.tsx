@@ -1,17 +1,9 @@
-import { useContext } from 'react';
-
 import { Link } from 'react-router-dom';
 
-import { MenuButton, MenuContext, MenuList, MenuListItem } from 'common/Menu';
+import { MenuButton, MenuList, MenuListItem, useMenu } from 'common/Menu';
 
 export default function Menu() {
-    const context = useContext(MenuContext);
-
-    if (!context) {
-        throw new Error('Should be used within a `Menu Provider`');
-    }
-
-    const { linkRefs } = context;
+    const { linkRefs } = useMenu();
 
     return (
         <>

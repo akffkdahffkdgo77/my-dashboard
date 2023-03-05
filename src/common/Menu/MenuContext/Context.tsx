@@ -1,7 +1,7 @@
 import { createContext } from 'react';
 
-import { IMenuContext } from 'common/Menu/MenuContext/types';
+import type { MenuContextType } from 'common/Menu/MenuContext/types';
 
-const MenuContext = createContext<IMenuContext | undefined>(undefined);
+const MenuContext = createContext<MenuContextType | undefined>(undefined);
 
 export default MenuContext;

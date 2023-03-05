@@ -1,3 +1,3 @@
-export interface ITab {
-    children: React.ReactNode[];
-}
+export type TabPropsType = {
+    children: React.ReactNode;
+};

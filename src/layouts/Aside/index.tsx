@@ -1,5 +1,5 @@
 import { MenuProvider } from 'common/Menu';
-import { Calendar, Menu } from 'component';
+import { Calendar, Menu } from 'components';
 
 export default function Aside() {
     return (

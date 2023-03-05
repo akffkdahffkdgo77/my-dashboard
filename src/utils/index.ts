@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 export const getDates = (curMonth: number) => {
     const curDate = new Date();
     curDate.setMonth(curMonth);
@@ -63,7 +62,7 @@ export const createCalendar = ({ length, startOfMonth }: CalendarType) => {
             const date = nullDates.length ? e - nullDates.length : e;
             if (date > 0) {
                 week.push(date <= length ? date : '');
-                if ((i + 1) % 7 === 0 && week.filter((e) => e).length) {
+                if ((i + 1) % 7 === 0 && week.filter((ele) => ele).length) {
                     arr.push(i === 6 ? [...nullDates, ...week] : [...week]);
                     week.splice(0, 7);
                 }

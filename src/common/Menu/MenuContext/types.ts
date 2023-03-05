@@ -1,4 +1,4 @@
-export interface IMenuContext {
+export type MenuContextType = {
     linkRefs: React.RefObject<HTMLAnchorElement>[];
     isVisible: boolean;
     setIsVisible: React.Dispatch<React.SetStateAction<boolean>>;
@@ -6,11 +6,11 @@ export interface IMenuContext {
     onKeyDown: (e: React.KeyboardEvent<HTMLButtonElement>) => void;
     onMouseEnter: () => void;
     onMouseLeave: (e: React.MouseEvent) => void;
-}
+};
 
-export interface IMenuProvider {
+export type MenuProviderPropsType = {
     children: React.ReactNode;
-}
+};
 
 export type TabIndexType = {
     linkRefs: React.RefObject<HTMLAnchorElement>[];

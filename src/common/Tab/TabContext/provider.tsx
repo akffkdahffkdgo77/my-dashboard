@@ -1,9 +1,10 @@
 import { createRef, useEffect, useMemo } from 'react';
 
-import TabContext from 'common/Tab/TabContext/context';
-import { ITabContext, ITabProvider } from 'common/Tab/TabContext/types';
+import TabContext from 'common/Tab/TabContext/Context';
 
-export default function TabProvider({ children }: ITabProvider) {
+import type { TabContextType, TabProviderPropsType } from 'common/Tab/TabContext/types';
+
+export default function TabProvider({ children }: TabProviderPropsType) {
     const linkRefs = Array.from({ length: 2 }).map(() => createRef<HTMLButtonElement>());
 
     useEffect(() => {
@@ -30,7 +31,7 @@ export default function TabProvider({ children }: ITabProvider) {
         return () => window.removeEventListener('keydown', onKeyMove, true);
     }, [linkRefs]);
 
-    const value: ITabContext = useMemo(() => ({ linkRefs }), [linkRefs]);
+    const value: TabContextType = useMemo(() => ({ linkRefs }), [linkRefs]);
 
     return <TabContext.Provider value={value}>{children}</TabContext.Provider>;
 }

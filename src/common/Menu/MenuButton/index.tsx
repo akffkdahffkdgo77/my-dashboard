@@ -1,16 +1,9 @@
-import { useContext } from 'react';
+import useMenu from 'common/Menu/MenuContext/useMenu';
 
-import { IMenuButton } from 'common/Menu/MenuButton/types';
-import MenuContext from 'common/Menu/MenuContext/Context';
+import type { MenuButtonPropsType } from 'common/Menu/MenuButton/types';
 
-export default function MenuButton({ children }: IMenuButton) {
-    const context = useContext(MenuContext);
-
-    if (!context) {
-        throw new Error('Should be used within a `Menu Provider`');
-    }
-
-    const { isVisible, onClick, onKeyDown } = context;
+export default function MenuButton({ children }: MenuButtonPropsType) {
+    const { isVisible, onClick, onKeyDown } = useMenu();
 
     return (
         <button

@@ -1,3 +1,3 @@
-export interface IMenuListItem {
-    children: React.ReactNode | React.ReactNode[];
-}
+export type MenuListItemPropsType = {
+    children: React.ReactNode;
+};

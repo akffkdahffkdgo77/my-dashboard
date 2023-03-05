@@ -1,3 +1,3 @@
-export interface ITabIndicator {
-    selected: boolean;
-}
+export type TabIndicatorPropsType = {
+    isSelected: boolean;
+};

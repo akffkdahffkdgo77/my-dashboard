@@ -1,10 +1,11 @@
 import { TabPanel } from 'common';
-import { DailyCommits, MonthlyCommits, WeeklyCommits, Skills, Projects, WeeklyCloneCoding } from 'component';
-import { IOverviewPanel } from 'pages/Home/components/OverviewPanel/types';
+import { DailyCommits, MonthlyCommits, WeeklyCommits, Skills, Projects, WeeklyCloneCoding } from 'components';
 
-export default function OverviewPanel({ selected }: IOverviewPanel) {
+import type { OverviewPanelPropsType } from 'pages/Home/components/OverviewPanel/types';
+
+export default function OverviewPanel({ isSelected }: OverviewPanelPropsType) {
     return (
-        <TabPanel index={1} selected={selected}>
+        <TabPanel index={1} isSelected={isSelected}>
             <MonthlyCommits />
             <div className="flex justify-between gap-x-2.5">
                 <WeeklyCommits />

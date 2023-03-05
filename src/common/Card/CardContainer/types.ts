@@ -1,3 +1,3 @@
-export interface ICardContainer {
-    children: React.ReactNode[];
-}
+export type CardContainerPropsType = {
+    children: React.ReactNode;
+};

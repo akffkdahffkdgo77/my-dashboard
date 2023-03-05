@@ -1,5 +1,5 @@
-export interface ITabPanel {
+export type TabPanelPropsType = {
     index: number;
-    selected?: boolean;
+    isSelected?: boolean;
     children: React.ReactNode;
-}
+};

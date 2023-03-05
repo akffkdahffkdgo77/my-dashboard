@@ -1,16 +1,9 @@
-import { useContext } from 'react';
+import useMenu from 'common/Menu/MenuContext/useMenu';
 
-import MenuContext from 'common/Menu/MenuContext/Context';
-import { IMenuListItem } from 'common/Menu/MenuListItem/types';
+import type { MenuListItemPropsType } from 'common/Menu/MenuListItem/types';
 
-export default function MenuListItem({ children }: IMenuListItem) {
-    const context = useContext(MenuContext);
-
-    if (!context) {
-        throw new Error('Should be used within a `Menu Provider`');
-    }
-
-    const { onMouseEnter } = context;
+export default function MenuListItem({ children }: MenuListItemPropsType) {
+    const { onMouseEnter } = useMenu();
 
     return (
         <li role="none" onMouseEnter={onMouseEnter} className="w-full h-full">

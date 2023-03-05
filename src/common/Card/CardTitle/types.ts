@@ -1,3 +1,3 @@
-export interface ICardTitle {
+export type CardTitlePropsType = {
     title: string;
-}
+};

@@ -1,3 +1,3 @@
-export interface ICalendarContainer {
-    children: React.ReactNode[];
-}
+export type CalendarContainerPropsType = {
+    children: React.ReactNode;
+};

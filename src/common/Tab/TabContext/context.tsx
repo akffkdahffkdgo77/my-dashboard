@@ -1,7 +1,7 @@
 import { createContext } from 'react';
 
-import { ITabContext } from 'common/Tab/TabContext/types';
+import { TabContextType } from 'common/Tab/TabContext/types';
 
-const TabContext = createContext<ITabContext | undefined>(undefined);
+const TabContext = createContext<TabContextType | undefined>(undefined);
 
 export default TabContext;

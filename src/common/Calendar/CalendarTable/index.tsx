@@ -1,6 +1,6 @@
-import { ICalendarTable } from 'common/Calendar/CalendarTable/types';
+import type { CalendarTablePropsType } from 'common/Calendar/CalendarTable/types';
 
-export default function CalendarTable({ calendar, currentDate, currentMonth, calendarMonth }: ICalendarTable) {
+export default function CalendarTable({ calendar, currentDate, currentMonth, calendarMonth }: CalendarTablePropsType) {
     return (
         <table className="absolute top-0 right-0 left-0 bottom-0  z-50 w-full h-full border-collapse">
             <thead>

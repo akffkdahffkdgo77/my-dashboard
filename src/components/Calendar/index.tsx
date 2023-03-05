@@ -1,8 +1,7 @@
 import { useState } from 'react';
 
-import useCalendar from 'hooks/calendar/useCalendar';
-
 import { CalendarContainer, CalendarNavigation, CalendarTable, CalendarTasks } from 'common';
+import useCalendar from 'hooks/calendar/useCalendar';
 import { calculateMonth, calculateYear, createCalendar, getDates } from 'utils';
 
 const CURRENT_MONTH = new Date().getMonth() + 1;
@@ -26,7 +25,7 @@ export default function Calendar() {
 
     return (
         <div className="w-full h-full flex flex-col items-start justify-start">
-            <CalendarNavigation current={current} handleMonth={handleMonth} />
+            <CalendarNavigation current={current} onMonthChange={handleMonth} />
             <CalendarContainer>
                 <CalendarTable calendar={calendar} currentDate={CURRENT_DATE} currentMonth={CURRENT_MONTH} calendarMonth={calendarMonth} />
                 <CalendarTasks calendar={calendar} currentMonth={CURRENT_MONTH} calendarMonth={calendarMonth} />

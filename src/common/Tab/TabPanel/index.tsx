@@ -1,9 +1,12 @@
-import { ITabPanel } from 'common/Tab/TabPanel/types';
+import type { TabPanelPropsType } from 'common/Tab/TabPanel/types';
 
-// The element that contains the content associated with a tab.
-export default function TabPanel({ index, selected = false, children }: ITabPanel) {
+/**
+ *  Tab Panel
+ *  The element that contains the content associated with a tab.
+ */
+export default function TabPanel({ index, isSelected = false, children }: TabPanelPropsType) {
     return (
-        <div id={`tabpanel-${index}`} role="tabpanel" tabIndex={0} aria-labelledby={`tab-${index}`} className={selected ? 'block' : 'hidden'}>
+        <div id={`tabpanel-${index}`} role="tabpanel" tabIndex={0} aria-labelledby={`tab-${index}`} className={isSelected ? 'block' : 'hidden'}>
             {children}
         </div>
     );

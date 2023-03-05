@@ -1,6 +1,6 @@
-export interface ITabItem {
+export type TabItemPropsType = {
     index: number;
-    selected?: boolean;
+    isSelected?: boolean;
     children: React.ReactNode;
     onClick: (index: number) => void;
-}
+};

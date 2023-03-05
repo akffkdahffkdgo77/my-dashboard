@@ -1,3 +1,3 @@
-export interface IStudyPanel {
-    selected: boolean;
-}
+export type StudyPanelPropsType = {
+    isSelected: boolean;
+};

@@ -1,3 +1,3 @@
-export interface ICardMedia {
+export type CardMediaPropsType = {
     image: string;
-}
+};

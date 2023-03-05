@@ -1,3 +1,3 @@
-export interface ICardHeader {
-    children: React.ReactNode[];
-}
+export type CardHeaderPropsType = {
+    children: React.ReactNode;
+};

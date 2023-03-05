@@ -1,3 +1,3 @@
-export interface ICardSupportingVisual {
+export type CardSupportingVisualPropsType = {
     children: React.ReactNode;
-}
+};

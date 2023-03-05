@@ -1,4 +1,4 @@
-export interface ICalendarNavigation {
+export type CalendarNavigationPropsType = {
     current: string;
-    handleMonth: (type: string) => void;
-}
+    onMonthChange: (type: string) => void;
+};

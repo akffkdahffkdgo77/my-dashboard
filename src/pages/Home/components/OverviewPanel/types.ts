@@ -1,3 +1,3 @@
-export interface IOverviewPanel {
-    selected: boolean;
-}
+export type OverviewPanelPropsType = {
+    isSelected: boolean;
+};

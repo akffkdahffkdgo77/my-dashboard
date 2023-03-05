@@ -1,3 +1,3 @@
-export interface ICardText {
+export type CardTextPropsType = {
     text: string;
-}
+};

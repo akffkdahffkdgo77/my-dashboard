@@ -1,6 +1,6 @@
-import { ICalendarTasks } from 'common/Calendar/CalendarTasks/types';
+import type { CalendarTasksPropsType } from 'common/Calendar/CalendarTasks/types';
 
-export default function CalendarTasks({ calendar, currentMonth, calendarMonth }: ICalendarTasks) {
+export default function CalendarTasks({ calendar, currentMonth, calendarMonth }: CalendarTasksPropsType) {
     return (
         <div className="absolute top-0 right-0 left-0 bottom-0 w-full h-full flex flex-col justify-start items-center">
             <div className="w-full flex justify-between items-center">

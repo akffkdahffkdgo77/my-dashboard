@@ -1,3 +1,3 @@
-export interface ICardSubtitle {
+export type CardSubtitlePropsType = {
     subtitle: string;
-}
+};

@@ -1,3 +1,3 @@
-export interface IMenuButton {
+export type MenuButtonPropsType = {
     children: React.ReactNode;
-}
+};
