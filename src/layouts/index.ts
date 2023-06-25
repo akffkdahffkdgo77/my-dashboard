@@ -1,6 +1,4 @@
-import Aside from 'layouts/Aside';
-import BaseLayout from 'layouts/BaseLayout';
-import Footer from 'layouts/Footer';
-import Header from 'layouts/Header';
-
-export { Aside, BaseLayout, Footer, Header };
+export { default as Aside } from './Aside';
+export { default as BaseLayout } from './BaseLayout';
+export { default as Footer } from './Footer';
+export { default as Header } from './Header';
