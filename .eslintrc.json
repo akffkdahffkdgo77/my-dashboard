@@ -24,6 +24,9 @@
         }
     },
     "rules": {
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "no-param-reassign": "off",
+        "no-nested-ternary": "off",
         "import/extensions": "off",
         "no-restricted-exports": "off",
         "react/no-array-index-key": "off",
@@ -43,12 +46,12 @@
                         "position": "before"
                     },
                     {
-                        "pattern": "{@components*,@components/**@layouts*,,@layouts/**}",
+                        "pattern": "{@components*,@components/**,@layouts*,@layouts/**}",
                         "group": "external",
                         "position": "before"
                     },
                     {
-                        "pattern": "{@zustand/**,@utils/**,@styles/**,@heroicons/**,*.+(css|scss)}",
+                        "pattern": "{@zustand/**,@utils/**,@assets/**,@styles/**,@heroicons/**,*.+(css|scss)}",
                         "patternOptions": {
                             "dot": true,
                             "nocomment": true,

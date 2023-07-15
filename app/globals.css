@@ -2,26 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.d3-tooltip-name {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 500;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.d3-tooltip-label {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 7px 10px;
+    font-weight: 700;
+    background-color: #252b2fbf;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.d3-tooltip-label > span {
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.d3-tooltip-color {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-white;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-black/50;
 }

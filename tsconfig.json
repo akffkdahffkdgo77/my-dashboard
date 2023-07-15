@@ -25,6 +25,7 @@
             "@assets/*": ["./assets/*"],
             "@components": ["./components/index.ts"],
             "@components/*": ["./components/*"],
+            "@layouts": ["./layouts/index.ts"],
             "@layouts/*": ["./layouts/*"],
             "@hooks/*": ["./hooks/*"],
             "@utils/*": ["./utils/*"]
