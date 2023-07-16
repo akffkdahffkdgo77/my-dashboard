@@ -1,7 +1,7 @@
 <img width="900" alt="overview" src="https://user-images.githubusercontent.com/52883505/209548326-b91bfe89-8079-4634-bdc7-cff98a6a3fbd.png">
 <img width="900" alt="studies" src="https://user-images.githubusercontent.com/52883505/209547827-e6e5da42-a8ea-465a-aa73-59f434ecbeaf.png">
 
-***
+---
 
 <div>
   <a href="https://github.com/akffkdahffkdgo77/weekly-clone-coding">
@@ -23,35 +23,39 @@
   
 ### 🗒️ Project Description
 
-__*Clone Coding Dashboard*__
+**_Clone Coding Dashboard_**
 
 ### 😎 Project Features
 
-- [x] Features   
-  - [x]  D3.js Graphs   
-  - [x] Calendar   
-- [x] Components   
-  - [x] Card   
-  - [x] Menu 
-  - [x] Tab
+-   [x] Features
+    -   [x] D3.js Graphs
+    -   [x] Calendar
+-   [x] Components
+    -   [x] Card
+    -   [x] Menu
+    -   [x] Tab
 
 ### Demo
 
 #### Charts Demo
+
 <img width="450" alt="dashboard_charts_demo" src="https://github.com/akffkdahffkdgo77/my-dashboard/assets/52883505/b61b8a56-3cd0-4e1a-9d97-4f5e51360e9f" />
 
 #### Card Demo
+
 <img width="450" alt="dashboard_card_demo" src="https://github.com/akffkdahffkdgo77/my-dashboard/assets/52883505/2fb6b7a6-8f55-426e-85e1-19fda35a0388" />
 
 #### Calendar Demo
+
 <img width="450" alt="dashboard_calendar_demo" src="https://github.com/akffkdahffkdgo77/my-dashboard/assets/52883505/0096340f-cc05-4adf-92d8-7ccbd06769fc" />
 
 #### Menu Demo
+
 <img width="450" alt="dashboard_menu_demo" src="https://github.com/akffkdahffkdgo77/my-dashboard/assets/52883505/5581e9e7-43d0-4337-9f4c-7efff57c08a3" />
 
 #### Searchbox Demo
-<img width="450" alt="dashboard_searchbox_demo" src="https://github.com/akffkdahffkdgo77/my-dashboard/assets/52883505/96989609-0328-4489-84ea-eb2e5217e820" />
 
+<img width="450" alt="dashboard_searchbox_demo" src="https://github.com/akffkdahffkdgo77/my-dashboard/assets/52883505/96989609-0328-4489-84ea-eb2e5217e820" />
 
 ## References
 
