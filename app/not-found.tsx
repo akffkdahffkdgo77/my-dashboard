@@ -8,7 +8,7 @@ export default function NotFound() {
     const navigate = useRouter();
 
     return (
-        <div className="fixed bottom-0 left-0 right-0 top-0 z-50 min-h-screen bg-[#f6f6f6]">
+        <div className="fixed bottom-0 left-0 right-0 top-0 z-50 min-h-screen bg-white">
             <div className="flex h-full flex-col items-center justify-center">
                 <ExclamationTriangleIcon className="h-[200px] w-[200px] text-red-500" />
                 <h2 className="mb-10 text-6xl text-slate-900">404</h2>
