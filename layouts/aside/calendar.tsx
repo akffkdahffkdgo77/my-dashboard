@@ -42,7 +42,7 @@ export default function Calendar() {
                     { title: 'Lorem ipsum', idx: 1, description: 'Meeting with Lorem ipsum...' },
                     { title: '뉴진스', idx: 2, description: 'Super Shy' },
                     { title: '세븐틴', idx: 3, description: '손오공' },
-                    { title: 'IV', idx: 4, description: 'I AM' }
+                    { title: 'IVE', idx: 4, description: 'I AM' }
                 ]);
             } else {
                 setTasks([
