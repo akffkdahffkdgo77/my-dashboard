@@ -3,7 +3,7 @@
   <tbody>
     <tr>
       <th align="left" width="200">Project Description</th>
-      <td><strong><i>Clone Coding Dashboard</i></strong></td>
+      <td><strong><i>나만의 대시보드 만들기</i></strong></td>
     </tr>
     <tr>
       <th align="left" width="200">Project Group</th>
@@ -44,6 +44,30 @@
   </tbody>
 </table>
 
+## Project History
+
+### 😎 v1.0
+
+-   [x] Features
+    -   [x] D3.js Graphs
+    -   [x] Calendar
+-   [x] Components
+    -   [x] Card
+    -   [x] Menu
+    -   [x] Tab
+
+### 🚀 v1.0.1
+
+-   [x] 1차 코드 리팩토링
+-   [x] NextJS Migration
+
+### 🔮 v1.1 (하반기 업데이트)
+
+-   [ ] 데이터 리스트 화면
+-   [ ] 통계 라이브러리 변경
+-   [ ] My Info 화면
+-   [ ] 로그인 화면
+
 ## Demo
 
 ### 차트 Demo
@@ -65,23 +89,6 @@
 ### 검색 Demo
 
 <img width="700" alt="dashboard_searchbox_demo" src="https://github.com/akffkdahffkdgo77/my-dashboard/assets/52883505/96989609-0328-4489-84ea-eb2e5217e820" />
-
-## Project History
-
-### 😎 v1.0
-
--   [x] Features
-    -   [x] D3.js Graphs
-    -   [x] Calendar
--   [x] Components
-    -   [x] Card
-    -   [x] Menu
-    -   [x] Tab
-
-### 🚀 v1.0.1
-
--   [x] 1차 코드 리팩토링
--   [x] NextJS Migration
 
 ## References
 
