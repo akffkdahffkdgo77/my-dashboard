@@ -1,4 +1,5 @@
 <img src="https://capsule-render.vercel.app/api?section=header&type=waving&height=300&text=My%20Dashboard&color=gradient&fontSize=90&customColorList=0,2,2,5,30" alt="" />
+
 <table>
   <tbody>
     <tr>
@@ -21,7 +22,7 @@
           <img src="https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB" alt="React" />
           <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white" alt="TypeScript" />
           <br/>
-          <img src="https://img.shields.io/badge/D3.js-%23f9a03c.svg?style=flat" alt="D3.JS" />
+          <img src="https://img.shields.io/badge/D3.js-%23f9a03c.svg?style=flat&logo=d3.js&logoColor=white" alt="D3.JS" />
           <br/>
           <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white" alt="TailwindCSS" />
           <img src="https://img.shields.io/badge/-heroicons-8B5CF6?style=flat" alt="heroicons" />
